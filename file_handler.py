@@ -23,6 +23,6 @@ def read_expenses():
     return expenses
 
 def write_expense(expense):
-    with open(FILE_NAME, mode='a', newline='') as file:
+    with open(FILE_NAME, mode='a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow([expense['date'], expense['category'], expense['amount'], expense['note']])
