@@ -26,13 +26,13 @@ def main_menu():
         elif choice == '2':
             print("\n--- Your Expenses ---")
             expense_manager.view_expenses()
-            print()  # Add spacing after listing
+            print()
 
         elif choice == '3':
             print("\n--- Search Expenses by Category ---")
             category = input("Enter category to search: ")
             expense_manager.search_by_category(category)
-            print()  # Add spacing after listing
+            print()
 
         elif choice == '4':
             while True:
